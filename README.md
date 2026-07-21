@@ -1,66 +1,256 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌿 SIWAK - Sistem Informasi Wisata dan UMKM Kabupaten Kebumen
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-12.x-red?logo=laravel">
+  <img src="https://img.shields.io/badge/PHP-8.1+-blue?logo=php">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?logo=mysql">
+  <img src="https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap">
+  <img src="https://img.shields.io/badge/Leaflet.js-Digital%20Map-green">
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 📖 Deskripsi
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**SIWAK (Sistem Informasi Wisata dan UMKM Kabupaten Kebumen)** merupakan aplikasi berbasis web yang dikembangkan menggunakan framework **Laravel 12** sebagai media informasi terintegrasi mengenai destinasi wisata dan UMKM di Kabupaten Kebumen. Sistem ini menyediakan informasi berupa nama, deskripsi, lokasi, galeri, kontak, serta peta digital sehingga masyarakat maupun wisatawan dapat memperoleh informasi secara mudah, cepat, dan terpusat.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Selain halaman publik, SIWAK juga dilengkapi dengan dashboard admin yang digunakan untuk mengelola seluruh data wisata, UMKM, kategori, kecamatan, galeri, dan kontak.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# 📌 Latar Belakang
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Kabupaten Kebumen memiliki potensi besar dalam sektor pariwisata dan Usaha Mikro, Kecil, dan Menengah (UMKM). Namun, informasi mengenai objek wisata dan UMKM masih tersebar di berbagai media sehingga masyarakat maupun wisatawan sering mengalami kesulitan dalam memperoleh informasi yang lengkap dan akurat.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Untuk mengatasi permasalahan tersebut, dikembangkan SIWAK sebagai sebuah sistem informasi berbasis web yang mampu mengintegrasikan data wisata dan UMKM ke dalam satu platform sehingga informasi dapat diakses dengan lebih mudah dan efisien.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# ❗ Permasalahan
 
-### Premium Partners
+Permasalahan yang menjadi dasar pengembangan sistem ini meliputi:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- Informasi wisata dan UMKM belum tersedia dalam satu platform yang terintegrasi.
+- Masyarakat kesulitan memperoleh informasi wisata dan UMKM secara lengkap.
+- Lokasi wisata dan UMKM belum tersaji dalam peta digital yang mudah diakses.
+- Belum tersedia media digital yang memudahkan admin dalam mengelola seluruh data secara terpusat.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# 🎯 Tujuan
 
-## Code of Conduct
+Tujuan pengembangan SIWAK adalah:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Mengintegrasikan informasi wisata dan UMKM Kabupaten Kebumen dalam satu sistem.
+- Memudahkan masyarakat dan wisatawan memperoleh informasi secara cepat dan akurat.
+- Menyediakan peta digital sebagai penunjuk lokasi wisata dan UMKM.
+- Membantu admin dalam mengelola data secara terpusat.
+- Menjadi media promosi digital bagi potensi wisata dan UMKM Kabupaten Kebumen.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# 🚧 Batasan Sistem
 
-## License
+Pengembangan SIWAK dibatasi pada:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Website responsif berbasis Laravel.
+- Menampilkan data wisata dan UMKM Kabupaten Kebumen.
+- Menampilkan nama, deskripsi, alamat, galeri, kontak, dan lokasi.
+- Menggunakan Leaflet.js sebagai peta digital.
+- Pengelolaan data hanya dilakukan oleh admin.
+
+Sistem ini **tidak mencakup**:
+
+- Pemesanan tiket.
+- Pembayaran online.
+- Aplikasi Android.
+- Sistem berbasis Artificial Intelligence (AI).
+
+---
+
+# ✨ Fitur Sistem
+
+## Pengunjung
+
+- Beranda
+- Daftar Wisata
+- Detail Wisata
+- Daftar UMKM
+- Detail UMKM
+- Peta Digital
+- Pencarian Data
+
+### Administrator
+
+- Login
+- Dashboard
+- CRUD Wisata
+- CRUD UMKM
+- CRUD Kategori
+- CRUD Kecamatan
+- CRUD Galeri
+- CRUD Kontak
+- Global Search
+- Logout
+
+---
+
+# 🏗 Arsitektur Sistem
+
+SIWAK menerapkan konsep **Model-View-Controller (MVC)** menggunakan framework Laravel.
+
+Komponen utama sistem terdiri atas:
+
+- Halaman Publik
+- Dashboard Admin
+- Controller
+- Model
+- Database MySQL
+
+---
+
+# 💻 Teknologi yang Digunakan
+
+- Laravel 12
+- PHP 8.1+
+- MySQL
+- Bootstrap 5
+- HTML5
+- CSS3
+- JavaScript
+- Leaflet.js
+- Laravel Breeze
+- Git & GitHub
+- Visual Studio Code
+- XAMPP
+
+---
+
+# 🗂 Struktur Database
+
+Database terdiri dari beberapa tabel utama:
+
+- Users
+- Wisata
+- UMKM
+- Kategori
+- Kecamatan
+- Galeri
+- Kontak
+
+---
+
+# ⚙️ Kebutuhan Sistem
+
+## Kebutuhan Fungsional
+
+### Pengunjung
+
+- Melihat halaman beranda.
+- Melihat daftar wisata.
+- Melihat detail wisata.
+- Melihat daftar UMKM.
+- Melihat detail UMKM.
+- Melakukan pencarian data.
+- Melihat lokasi pada peta digital.
+- Melihat informasi kontak.
+
+### Administrator
+
+- Login.
+- Mengelola data wisata.
+- Mengelola data UMKM.
+- Mengelola kategori.
+- Mengelola kecamatan.
+- Mengelola galeri.
+- Mengelola kontak.
+- Logout.
+
+---
+
+## Kebutuhan Non Fungsional
+
+### Perangkat Lunak
+
+- Windows 10/11
+- Laravel 12
+- PHP 8.1+
+- MySQL
+- Bootstrap 5
+- Visual Studio Code
+- XAMPP
+- Git
+- Google Chrome
+- Microsoft Edge
+
+### Perangkat Keras
+
+- Laptop ASUS Zenbook 13
+
+---
+
+# 🚀 Instalasi
+
+Clone repository
+
+```bash
+git clone https://github.com/username/siwak.git
+```
+
+Masuk ke folder project
+
+```bash
+cd siwak
+```
+
+Install dependency
+
+```bash
+composer install
+```
+
+Salin file environment
+
+```bash
+cp .env.example .env
+```
+
+Generate application key
+
+```bash
+php artisan key:generate
+```
+
+Migrasi database
+
+```bash
+php artisan migrate
+```
+
+Membuat symbolic link storage
+
+```bash
+php artisan storage:link
+```
+
+Menjalankan aplikasi
+
+```bash
+php artisan serve
+```
+
+---
+
+# 👨‍💻 Developer
+
+**Misky Anjana Lubis**
+
+Mahasiswa Program Studi Teknologi Informasi
+
+Universitas Islam Negeri Walisongo Semarang
+
+---
+
+# 📌 Keterangan
+
+Proyek ini dikembangkan sebagai bagian dari kegiatan **Magang di Dinas Komunikasi dan Informatika (Diskominfo) Kabupaten Kebumen Tahun 2026** dengan tujuan mendukung digitalisasi informasi sektor pariwisata dan UMKM melalui platform berbasis web.
